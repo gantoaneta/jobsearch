@@ -1,8 +1,0 @@
-$(document)
-        .ready(function () {
-            var loc = window.location.pathname;
-            $.fn.api.settings.api = {
-//                'search': loc + "_model/select.php?query={query}",
-                'cauta' : loc + "_model/select_category.php?a={query}"
-            };
-        });
