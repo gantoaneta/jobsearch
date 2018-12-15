@@ -1,0 +1,9 @@
+#descriere{
+    margin-top: 0;
+    border-radius:unset;
+    border-top: 0.1em solid #c82828;
+}
+body > div:nth-child(1) > div > div.ui.red.inverted.menu{
+    margin-bottom: 0;
+    border-radius:unset;
+}

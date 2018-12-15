@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+/*body{
+    background-color: black;
+    color:#d3b48d;
+}*/
+fieldset{
+    width: 70%;
+    height: auto;
+}
+label:first-of-type, input:first-of-type{
+    margin-top: 15px;
+}
+#userEmail{
+    margin:0px;
+}
+legend,fieldset {
+    margin-left: 0.5%;
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: left;
+    margin-left: 2%;
+}
+input {
+/*background-color:#d3b48d;*/
+    display: inline-block;
+    float: left;
+    width:25%;
+    margin-bottom: 0px;
+}
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+/*border: 1px solid black;*/
+    border-radius: 15px;
+}
+#fieldCand, #fieldComp{
+    border:none;
+}
+#inregCand legend, #loginCand legend,#loginC legend{
+    font-style: italic;
+    font-size: 16px;
+    text-align: left;
+}
+#legend1{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+#login, #loginComp{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid #d3b48d;
+    border-radius: 15px;
+/*color: #d3b48d;*/
+
+}
+#login:hover,#loginComp:hover{
+    background-color: #d3b48d;
+}
+#reg:hover,#regComp:hover{
+    background-color: #d3b48d;
+    color:black;
+}
+.active{
+    background-color: #d3b48d;
+    color:black;
+}
+#reg,#regComp{
+    color:black;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid #d3b48d;
+    border-radius: 15px;
+
+}
+#lblPsw{
+    position: relative;
+    left:50%;
+    top:-31px;
+}
+#pswShow{
+    margin-right: -2px;
+    margin-left: -2px;
+}
+#lblPsw, #pswShow{
+    margin-top: 5px;
+    padding: 0px;
+}
+button{
+    position: relative;
+    left:29%;
+    top:0px;
+    float: left;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-bottom: 1px transparent;
+    border-radius: 10px;
+    background-color: #d3b48d;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    font-weight: bold;
+
+}
+.warning{
+    font-size: 12px;
+    text-align: left;
+    color:red;
+    width: 40%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /*border: 1px solid black;*/
+}
+.warning:last-of-type{
+    margin-bottom: 0px;
+    margin-top: -20px;
+
+}
+
+#lblPsw{
+    position: relative;
+    left:60%;
+
+}
+
+@media only screen and (max-width: 850px) {
+    fieldset{
+        width: 98%;
+        height: auto;
+    }
+
+    input {
+        width: 45%;
+    }
+
+    #lblPsw{
+        position: relative;
+        left:55%;
+        top:-31px;
+    }
+
+    #pswShow{
+        margin-right: -2px;
+        margin-left: -2px;
+    }
+    #lblPsw, #pswShow{
+        margin-top: 5px;
+        padding: 0px;
+
+    }
+
+    fieldset #inregCand{
+        height: 400px;
+        width: 400px;
+    }
+    button{
+        position: relative;
+        top: 25px;
+    }
+    #lblPsw{
+        position: relative;
+        top: 15px;
+        left:25%;
+
+    }
+    #btnLogin{
+        position: relative;
+        top:5px;
+    }
+}
+@media only screen and (max-width: 550px){
+    #btnLogin{
+        position: relative;
+        top:5px;
+        left:50px;
+    }
+    #lblPsw{
+        position: relative;
+        top: 15px;
+        left:10%;
+
+    }
+}

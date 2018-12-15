@@ -1,0 +1,68 @@
+    function ascunde_tabele(){
+        
+    }
+$(document).ready(function () {
+    ajax_search('apartament');
+//
+//
+//    $('#simple')
+//            .search({
+//                minCharacters: 1,
+//                fullTextSearch: false,
+//                apiSettings: {
+//                    url: "_model/select.php?query={query}",
+//                    onResponse: function (githubResponse) {
+////                            console.log(githubResponse.items);
+//                        var
+//                                response = {
+//                                    results: {}
+//                                }
+//                        ;
+//// console.log(response);
+//                        if (!githubResponse || !githubResponse.items) {
+//
+////                        console.log('ok');
+//                            return false;
+//                        }
+//                        // translate GitHub API response to work with search
+//                        $.each(githubResponse.items, function (index, item) {
+//
+//                            var
+//                                    persoana = item.pers,
+//                                    maxResults = 8
+//                                    ;
+//                            if (index >= maxResults) {
+//                                return false;
+//                            }
+//                            // add category 
+//                            if (response.results[persoana] === undefined) {
+//                                response.results[persoana] = {
+////                                    name: persoana,
+//                                    title: item.pers,
+//                                    results: [],
+//                                };
+//                            }
+////console.log(item.pers);
+////                            response.results[persoana].results.push({
+////                                
+////                            });
+//
+////                        console.log(response);
+//                        });
+//
+//                        return response;
+////console.log(response);
+//
+//                    }
+//
+//                }
+//            });
+//
+////$('.ui.search').search({
+////  debug: true,
+////  verbose: true,
+////  cache: false
+////});
+////$.site('disable console');
+});
+

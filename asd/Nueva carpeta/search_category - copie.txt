@@ -1,0 +1,53 @@
+//    function ascunde_tabele(){
+//        
+//    }
+$(document).ready(function () {
+//    ajax_search('apartament');
+
+    $("#category")
+            .search({
+                type: 'category',
+                minCharacters: 1,
+                fullTextSearch: true,
+                forceSelection: true,
+                apiSettings: {
+                    action: 'cauta',
+                    onResponse: function (githubResponse) {
+//                        console.log(githubResponse);
+                        var
+                                response = {
+                                    results: {}
+                                }
+                        ;
+                        if (!githubResponse || !githubResponse.items) {
+                            return;
+                        }
+                        // translate GitHub API response to work with search
+                        $.each(githubResponse.items, function (index, item) {
+
+                            var category = item.category || 'Unknown',
+                                    maxResults = 8
+                                    ;
+                            if (index >= maxResults) {
+                                return false;
+                            }
+                            // add category 
+                            if (response.results[category] === undefined) {
+                                response.results[category] = {
+                                    name: category,
+                                    results: []
+                                };
+                            }
+                            //add results to category
+                            response.results[category].results.push({
+                                title: item.nume
+                            });
+//                            console.log(response.results[tip].results);
+                        });
+//                        console.log(response);
+                        return response;
+                    }
+                }
+            });
+
+});
