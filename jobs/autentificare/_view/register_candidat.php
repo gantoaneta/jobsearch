@@ -45,12 +45,12 @@
             </div>
             <div class="fields">
                 <div class="eight wide field">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="Email" >
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="persoana@mail.com" >
                 </div>
                 <div class="eight wide field">
-                    <label>Repetare email</label>
-                    <input type="email" name="email2" placeholder="Email" >
+                    <label>Repetare e-mail</label>
+                    <input type="email" name="email2" placeholder="persoana@mail.com" >
                 </div>
             </div>
             <div class="eight wide field">
@@ -66,25 +66,6 @@
                             <i class="eye slash icon"  id="show_pass"></i>
                         </button>
                     </div>
-                            <?php
-                                
-                            if(isset($_POST['username']) == true && isset($_POST['password']) == true){
-                                $username = $_POST['username'];
-                                $parola = $_POST['password'];
-                                $row = check_cont($cm, $username, $parola);
-                                if($row == 0){
-                                    $return = "<div class='ui pointing red basic fluid label' id='error'>
-                                        Nu există combinația username/parola.
-                                                </div>";
-                                } else {
-                                    $return='';
-//var_dump($_POST);
-//var_dump($_SESSION);
-//redirect(PATH);
-                                }
-                                echo $return;
-                            }
-                            ?>
                 </div>
                 <div class="eight wide field">
                     <label>Repetare parola</label>
