@@ -2,7 +2,7 @@
     <div class="sixteen wide column">
         <div class="ui red inverted menu">
             <a href="<?php echo ROOT_LINK; ?>" id="logo" class="item">
-                "logoo"
+                <img class="ui tiny image" alt="logo Job Search" src="<?php echo ROOT_LINK; ?>img/logotxt-grey.png"></img>
             </a>
             <a href="#cauta" class="item">
                 Caută job

@@ -24,7 +24,7 @@ require_once PATH.'/_controller/connection.php';
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>dist/semantic/semantic.min.css<?php mt_rand(); ?>">
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>_styles/style.css<?php mt_rand(); ?>" />
         
-        <link rel="shortcut icon" type="<?php echo ROOT_LINK; ?>image/png" href="../img/logo2.png"/>
+        <link rel="shortcut icon" type="image/png" href="img/logo-grey.png"/>
         
         <title>Titlu</title>
     </head>

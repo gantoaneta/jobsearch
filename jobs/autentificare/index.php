@@ -22,18 +22,20 @@ $title="acasa";
 <html>
     <head>
         <meta charset="UTF-8" lang="ro-RO">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <script src="<?php echo ROOT_LINK; ?>dist/jquery-3.3.1.min.js<?php mt_rand(); ?>"></script>
         <script src="<?php echo ROOT_LINK; ?>dist/semantic/semantic.min.js<?php mt_rand(); ?>"></script>
         <script src="<?php echo ROOT_LINK; ?>autentificare/_scripts/login.js<?php mt_rand(); ?>"></script>
         <script src="<?php echo ROOT_LINK; ?>_scripts/script.js<?php mt_rand(); ?>"></script>
         <script src="<?php echo ROOT_LINK; ?>dist/Semantic-UI-Calendar/dist/calendar.min.js<?php mt_rand(); ?>"></script>
+        <script src="<?php echo ROOT_LINK; ?>autentificare/_scripts/register.js<?php mt_rand(); ?>"></script>
         
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>dist/semantic/semantic.min.css<?php mt_rand(); ?>" />
-        <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>autentificare/_styles/login.css<?php mt_rand(); ?>" />
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>dist/Semantic-UI-Calendar/dist/calendar.min.css<?php mt_rand(); ?>" />
+        <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>autentificare/_styles/login.css<?php mt_rand(); ?>" />
+        <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>_styles/style.css<?php mt_rand(); ?>" />
         
-        <link rel="shortcut icon" type=<?php echo ROOT_LINK; ?>"image/png" href="logo2.png"/>
+        <link rel="shortcut icon" type="image/png" href="../img/logo-grey.png"/>
         
         <title>Log in</title>
     </head>

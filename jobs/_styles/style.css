@@ -7,3 +7,7 @@ body > div:nth-child(1) > div > div.ui.red.inverted.menu{
     margin-bottom: 0;
     border-radius:unset;
 }
+#logo{
+    padding:5px;
+    width: 55px!important;
+}
