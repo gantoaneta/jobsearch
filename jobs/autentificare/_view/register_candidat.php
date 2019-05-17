@@ -134,7 +134,7 @@
             $username = $_POST['username'];
             $parola = $_POST['password'];
             $abv_judet = $_POST['judet'];
-                        var_dump($_POST);
+//                        var_dump($_POST);
             insert_candidat($cm, $nume, $prenume, $email, $data, $username, $parola, $abv_judet);
         }
         ?>

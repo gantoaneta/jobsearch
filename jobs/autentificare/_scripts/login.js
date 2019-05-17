@@ -75,9 +75,7 @@ $(document).ready(function (){
     
     if(window.location.href.split("type=")[1] != undefined){
         $("#type").hide();
-        //alert("ok");
     } else {
-        //        alert("not ok");
         $("#type").show();
     }
     
@@ -85,30 +83,30 @@ $(document).ready(function (){
             .form({
                 inline : true,
         on: 'change',
-        //        fields: {
-        //            username: {
-        //                identifier: 'username',
-        //                rules: [
-        //                    {
-        //                        type   : 'empty',
-        //                        prompt : 'Completează câmpul'
-        //                    }
-        //                ]
-        //            },
-        //            password: {
-        //                identifier: 'password',
-        //                rules: [
-        //                    {
-        //                        type   : 'empty',
-        //                        prompt : 'Completează câmpul'
-        //                    }
-        //                ]
-        //            }
-        //        },
-        onvalid: function (){
-            console.log("ok");
-            //            window.open('../../jobs/');
-            //            $("#login").submit();
+        fields: {
+            username: {
+                identifier: 'username',
+                rules: [
+                    {
+                        type   : 'empty',
+                        prompt : 'Completează câmpul'
+                    }
+                ]
+            },
+            password: {
+                identifier: 'password',
+                rules: [
+                    {
+                        type   : 'empty',
+                        prompt : 'Completează câmpul'
+                    }
+                ]
+            }
+        },
+        onSuccess:function (){
+            console.log("okawqfwsa");
+//            window.open('../../jobs/');
+//            $("#login").submit();
         }
     });
     

@@ -9,11 +9,12 @@ $http='http';
 define("ROOT_LINK", "$http://" . $_SERVER["HTTP_HOST"] . $_SERVER["CONTEXT_PREFIX"] . "/jobs/");
 define("PATH", str_replace('\\', '/', realpath("../")));
 
-require_once PATH . '/_controller/connection.php';
+require_once PATH . '/_model/connection.php';
 $cm = connection();
 require_once PATH . '/autentificare/_model/functii_login.php';
 require_once PATH . '/autentificare/_model/autentificare.php';
-require_once PATH . '/autentificare/_model/redirect.php';
+//require_once PATH . '/autentificare/_model/redirect.php';
+
 //var_dump($_POST);
 //var_dump($_SESSION);
 global $title;

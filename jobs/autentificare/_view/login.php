@@ -38,7 +38,7 @@
                             ?>
                 </div>         
                 <div class="field" style="text-align: right">
-                    <button class="ui red button" type="submit">Log in</button>
+                    <button class="ui red submit button">Log in</button>
                 </div>
             </form>
         </div>

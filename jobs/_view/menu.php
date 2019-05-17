@@ -7,7 +7,7 @@
             <a href="#cauta" class="item">
                 Caută job
             </a>
-            <a href="#angajeaza" class="item">
+            <a href="<?php echo ROOT_LINK; ?>adaugare_job/" class="item">
                 Adaugă job
             </a>
                 <?php

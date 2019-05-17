@@ -9,14 +9,10 @@ if (isset($_SERVER['HTTPS']) && $_SERVER != "undefined" && $_SERVER != Null) {
     $http = 'http';
 }
 define("ROOT_LINK", "$http://" . $_SERVER["HTTP_HOST"] . $_SERVER["CONTEXT_PREFIX"] . "/jobs/");
-define("PATH", str_replace('\\', '/', realpath(__DIR__)));
-require_once PATH . '/_model/connection.php';
-$cm= connection();
+define("PATH", str_replace('\\', '/', realpath("../")));
 
-require_once PATH . '/_model/functii_comune.php';
-//var_dump(ROOT_LINK);
-//require_once PATH.'/autentificare/_model/autentificare.php';
-//require_once PATH . '/autentificare/_controller/redirect.php';
+require_once PATH . '/_model/connection.php';
+$cm = connection();
 ?>
 <html>
     <head>
@@ -25,12 +21,13 @@ require_once PATH . '/_model/functii_comune.php';
         <script src="<?php echo ROOT_LINK; ?>dist/jquery-3.3.1.min.js<?php mt_rand(); ?>"></script>
         <script src="<?php echo ROOT_LINK; ?>dist/semantic/semantic.min.js<?php mt_rand(); ?>"></script>
         <script src="<?php echo ROOT_LINK; ?>_scripts/script.js<?php mt_rand(); ?>"></script>
-        <script src="<?php echo ROOT_LINK; ?>_scripts/search.js"></script>
+        <script src="<?php echo ROOT_LINK; ?>_scripts/search.js<?php mt_rand(); ?>"></script>
+        <script src="<?php echo ROOT_LINK; ?>adaugare_job/_scripts/adaugare_anunt.js<?php mt_rand(); ?>"></script>
 
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>dist/semantic/semantic.min.css<?php mt_rand(); ?>">
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>_styles/style.css<?php mt_rand(); ?>" />
 
-        <link rel="shortcut icon" type="image/png" href="img/logo-grey.png"/>
+        <link rel="shortcut icon" type="image/png" href="../img/logo-grey.png"/>
 
         <title>Titlu</title>
     </head>
@@ -43,12 +40,12 @@ require_once PATH . '/_model/functii_comune.php';
         require_once PATH . '/_view/menu.php';
         ?>
 
-        <div class="ui red inverted segment" id="descriere">
+<!--        <div class="ui red inverted segment" id="descriere">
             <div class="ui center aligned header">Job Search</div>
-        </div>
-        <?php 
-        require_once PATH . '/_view/search.php';
-        require_once PATH . '/_view/home.php';
+        </div>-->
+<div id="tabel"></div>
+        <?php
+//        require_once PATH . '/_view/home.php';
 //        } else {
 //           
         ?>

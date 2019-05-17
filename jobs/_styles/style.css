@@ -11,3 +11,14 @@ body > div:nth-child(1) > div > div.ui.red.inverted.menu{
     padding:5px;
     width: 55px!important;
 }
+.ui.category.search>.results .category {
+    display: flex!important;
+}
+.ui.vertical.divider{
+    height: 0!important;
+}
+#ins_anunt, #anuleaza_anunt{
+    float:right;
+/*     position:relative; */
+/*     left:85%; */
+}

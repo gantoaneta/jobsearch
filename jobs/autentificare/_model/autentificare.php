@@ -1,6 +1,6 @@
 <?php
 //session_start();
-require_once '../_controller/connection.php';
+require_once '../_model/connection.php';
 $cm = connection();
 if(isset($_POST['username'])){
     $sql = "SELECT u.id uid, username, tu.id 
