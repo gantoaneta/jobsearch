@@ -3,7 +3,7 @@
         <div class="ui small center aligned header">Înregistrare candidat</div>
     </div>
     <div class="ui bottom attached segment">
-        <form class="ui form" method="post" id='register_candidat'>
+        <form class="ui form" id='register_candidat'>
             <div class="fields">
                 <div class="eight wide field">
                     <label>Nume</label>
@@ -78,65 +78,8 @@
                 </div>
             </div>
             <div class="field" style="text-align: center">
-                <button class="ui red button" type="submit">Înregistrează-te</button>
+                <div class="ui red button" id="btn_candidat">Înregistrează-te</div>
             </div>
         </form>
-        <?php 
-        if(isset($_POST['nume']) && isset($_POST['prenume']) && isset($_POST['email']) && isset($_POST['data']) && 
-                isset($_POST['username']) && isset($_POST['password']) && isset($_POST['judet'])){
-            $_POST['password']= md5($_POST['password']);
-            $_POST['password2']= md5($_POST['password2']);
-            $data= explode(" ", $_POST['data']);
-                
-            switch ($data[1]){
-                case "Ianuarie":
-                    $data[1]="01";
-                    break;
-                case "Februarie":
-                    $data[1]="02";
-                    break;
-                case "Martie":
-                    $data[1]="03";
-                    break;
-                case "Aprilie":
-                    $data[1]="04";
-                    break;
-                case "Mai":
-                    $data[1]="05";
-                    break;
-                case "Iunie":
-                    $data[1]="06";
-                    break;
-                case "Iulie":
-                    $data[1]="07";
-                    break;
-                case "August":
-                    $data[1]="08";
-                    break;
-                case "Septembrie":
-                    $data[1]="09";
-                    break;
-                case "Octombrie":
-                    $data[1]="10";
-                    break;
-                case "Noiembrie":
-                    $data[1]="11";
-                    break;
-                case "Decembrie":
-                    $data[1]="12";
-                    break;
-            }
-                
-            $nume = $_POST['nume'];
-            $prenume = $_POST['prenume'];
-            $email = $_POST['email'];
-            $data = $data[0]."-".$data[1]."-".$data[2];
-            $username = $_POST['username'];
-            $parola = $_POST['password'];
-            $abv_judet = $_POST['judet'];
-//                        var_dump($_POST);
-            insert_candidat($cm, $nume, $prenume, $email, $data, $username, $parola, $abv_judet);
-        }
-        ?>
     </div>
 </div>

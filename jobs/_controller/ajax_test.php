@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 define("PATH", realpath(dirname(__DIR__) . "/"));

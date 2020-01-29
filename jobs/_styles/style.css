@@ -1,3 +1,6 @@
+*{
+    font-family: 'Muli', sans-serif;
+}
 #descriere{
     margin-top: 0;
     border-radius:unset;
@@ -21,4 +24,10 @@ body > div:nth-child(1) > div > div.ui.red.inverted.menu{
     float:right;
 /*     position:relative; */
 /*     left:85%; */
+}
+#segment_principal > div > div > div.ui.horizontal.segments > div:nth-child(n){
+    width:33.33%
+}
+body > div:nth-child(1) > div > div > div > div > div.menu.transition.visible > div:nth-child(n) > a{
+    color:black!important;
 }

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define("PATH", realpath(dirname(__DIR__) . "/../"));
+define("PATH", realpath(dirname(__DIR__) . "/../../"));
 if (isset($_SESSION['user']) === true) {
 //    var_dump($_SESSION['user_name']);
 } else if (isset($_SESSION['LAST_REQUEST_URI']) === true) {
@@ -15,11 +15,10 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' && $_SERVER['HTTPS'] !
     $http = 'http';
 }
 define("ROOT_LINK", "$http://" . $_SERVER['HTTP_HOST'] . $_SERVER['CONTEXT_PREFIX'] . "/jobs/");
-require_once PATH . '\_model\connection.php';
+require_once PATH . '\jobs\_model\connection.php';
+require_once PATH . '\jobs\_model\functii_comune.php';
 $cm = connection();
 
-if (isset($_POST['actiune']) === true && $_POST['actiune']=='afiseaza_tabel') {
-    require_once PATH.'\adaugare_job\_view\tabel.php';
-}else{
-    echo 'nope';
+if (isset($_POST['actiune']) === true && $_POST['actiune']=='afiseaza_segment_principal') {
+    require_once PATH.'/jobs/home/_view/home.php';
 }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-//var_dump($_SESSION);
+var_dump($_SESSION);
 //var_dump($_POST);
 
 if (isset($_SERVER['HTTPS']) && $_SERVER != "undefined" && $_SERVER != Null) {
@@ -13,6 +13,7 @@ define("PATH", str_replace('\\', '/', realpath("../")));
 
 require_once PATH . '/_model/connection.php';
 $cm = connection();
+require_once PATH . '/autentificare/_controller/redirect.php';
 ?>
 <html>
     <head>
@@ -26,6 +27,7 @@ $cm = connection();
 
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>dist/semantic/semantic.min.css<?php mt_rand(); ?>">
         <link rel="stylesheet" href="<?php echo ROOT_LINK; ?>_styles/style.css<?php mt_rand(); ?>" />
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 
         <link rel="shortcut icon" type="image/png" href="../img/logo-grey.png"/>
 

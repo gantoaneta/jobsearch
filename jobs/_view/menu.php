@@ -30,7 +30,9 @@
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        <div class="item">New</div>
+                        <div class="item" onclick="window.location.href='/jobs/profil/'"><i class="cog icon"></i>Setări cont</div>
+                        <div class="divider"></div>
+                        <div class="item"><i class="sign-out icon"></i>Ieșire cont</div>
                     </div>
                 </div>
                 <a href="" onclick="<?php session_destroy(); ?>" class="item">

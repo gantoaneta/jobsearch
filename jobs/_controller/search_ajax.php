@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 define("PATH", realpath(dirname(__DIR__) . "/../"));
@@ -18,6 +17,7 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' && $_SERVER['HTTPS'] !
 define("ROOT_LINK", "$http://" . $_SERVER['HTTP_HOST'] . $_SERVER['CONTEXT_PREFIX'] . "/jobs/");
 require_once PATH . '\jobs\_model\connection.php';
 $cm = connection();
+require_once PATH . '/autentificare/_controller/redirect.php';
 
 require_once PATH . '\jobs\_model\search.php';
 if (isset($_GET['q']) === true) {

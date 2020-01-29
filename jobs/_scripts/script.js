@@ -8,26 +8,24 @@ $(document).ready(function () {
         }
     });
     $(".ui.dropdown").dropdown();
-    $("#domeniu").dropdown();
-    $("#judet").dropdown();
-    search_job();
+//    search_job();
 });
 
-function afiseza_cautare(){
-    var path = location.href.split("/jobs");
-    
-     $.ajax({
-        method: 'post',
-        url: path[0] + "/test/eproprietar/_controller/search_persoana_ajax.php",
-        data: {
-            id_pf: id_pf,
-            id_pj: id_pj,
-            id_ep: id_ep
-        },
-        success: function (result) {
-        },
-        error: function () {
-            console.log('OOPS! Something went wrong');
-        }
-    });
-}
+//function afiseza_cautare(){
+//    var path = location.href.split("/jobs");
+//    
+//     $.ajax({
+//        method: 'post',
+//        url: path[0] + "/test/eproprietar/_controller/search_persoana_ajax.php",
+//        data: {
+//            id_pf: id_pf,
+//            id_pj: id_pj,
+//            id_ep: id_ep
+//        },
+//        success: function (result) {
+//        },
+//        error: function () {
+//            console.log('OOPS! Something went wrong');
+//        }
+//    });
+//}

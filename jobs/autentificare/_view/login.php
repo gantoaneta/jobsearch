@@ -17,28 +17,9 @@
                             <i class="eye slash icon"  id="show_pass"></i>
                         </button>
                     </div>
-                            <?php
-                                
-                            if(isset($_POST['username']) == true && isset($_POST['password']) == true){
-                                $username = $_POST['username'];
-                                $parola = $_POST['password'];
-                                $row = check_cont($cm, $username, $parola);
-                                if($row == 0){
-                                    $return = "<div class='ui pointing red basic fluid label' id='error'>
-                                        Nu există combinația username/parola.
-                                                </div>";
-                                } else {
-                                    $return='';
-//var_dump($_POST);
-//var_dump($_SESSION);
-//redirect(PATH);
-                                }
-                                echo $return;
-                            }
-                            ?>
                 </div>         
                 <div class="field" style="text-align: right">
-                    <button class="ui red submit button">Log in</button>
+                    <div class="ui red button" id="btn_login">Log in</div>
                 </div>
             </form>
         </div>
